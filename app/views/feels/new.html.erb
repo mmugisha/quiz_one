@@ -1,0 +1,10 @@
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+	<h1> The Library of Feelings </h1>
+
+	<%= simple_form_for @feeling do |f| %>
+		<%= f.input :name, label:'Name' %>
+		<%= f.input :feeling, label:'How do you feel today?' %>
+		<br />
+		<%= f.button :submit, 'Submit your feeling', :class=>'btn btn-primary'%>
+	<% end %>
+</div>
